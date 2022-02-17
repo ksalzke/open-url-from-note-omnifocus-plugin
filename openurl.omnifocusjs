@@ -3,7 +3,7 @@
 	"targets": ["omnifocus"],
 	"author": "Kaitlin Salzke",
 	"identifier": "com.KaitlinSalzke.OpenURL",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Open URL",
 	"label": "Open URL",
 	"shortLabel": "Open URL",
@@ -14,18 +14,18 @@
 	const action = new PlugIn.Action(async function(selection, sender){
 		const task = selection.tasks[0]
 
-    const regex = /(\b.*\/{2,3}.*(\b)?)/gm
+		const regex = /(\b.*\/{2,3}.*(\b)?)/gm
 
-    const urls = [...task.note.matchAll(regex)].map(match => match[0]);
+		const urls = [...task.note.matchAll(regex)].map(match => match[0]);
 
-    if (urls.length === 1) URL.fromString(urls[0]).open()
+		if (urls.length === 1) URL.fromString(urls[0]).open()
 
-    if (urls.length > 1) {
-      const form = new Form()
-      form.addField(new Form.Field.Option('url', 'URL', urls, urls, urls[0]))
-      await form.show('Select URL to Open', 'Open')
-      URL.fromString(form.values.url).open()
-    }
+		if (urls.length > 1) {
+			const form = new Form()
+			form.addField(new Form.Field.MultipleOptions('urls', 'URLs', urls, urls, urls))
+			await form.show('Select URLs to Open', 'Open')
+			for (const url of form.values.urls) URL.fromString(url).open()
+		}
 	});
 
 	action.validate = function(selection, sender){
