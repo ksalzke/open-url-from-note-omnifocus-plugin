@@ -8,6 +8,10 @@
     {
       "identifier": "openURL",
       "image": "link"
+    },
+    {
+      "identifier": "preferences",
+      "image": "gear.circle.fill"
     }
   ],
   "libraries": [
