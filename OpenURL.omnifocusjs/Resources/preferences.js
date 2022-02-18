@@ -6,7 +6,7 @@
 
     // create and show form
     const form = new Form()
-    form.addField(new Form.Field.Option('omniFocusOpen', 'Open OmniFocus Links In...', ['window', 'tab', 'neither'], ['New window', 'New tab', 'Current window and tab'], omniFocusOpen))
+    form.addField(new Form.Field.Option('omniFocusOpen', 'Open OmniFocus links in...', ['window', 'tab', 'neither'], ['New window', 'New tab', 'Current window and tab'], omniFocusOpen))
     await form.show('Preferences: Open URL(s)', 'OK')
 
     // save preferences
