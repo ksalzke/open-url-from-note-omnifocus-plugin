@@ -1,18 +1,18 @@
 {
-    "defaultLocale": "en",
-    "identifier": "com.KaitlinSalzke.OpenURL",
-    "author": "Kaitlin Salzke",
-    "description": "An OmniFocus plugin that opens the URL(s) contained in the note of a task.",
-    "version": "1.1.2",
-    "actions": [
-      {
-        "identifier": "openURL",
-        "image": "link"
-      }
-    ],
-    "libraries": [
-      {
-        "identifier": "openURLlib"
-      }
-    ]
-  }
+  "defaultLocale": "en",
+  "identifier": "com.KaitlinSalzke.OpenURL",
+  "author": "Kaitlin Salzke",
+  "description": "An OmniFocus plugin that opens the URL(s) contained in the note of a task.",
+  "version": "1.2.0",
+  "actions": [
+    {
+      "identifier": "openURL",
+      "image": "link"
+    }
+  ],
+  "libraries": [
+    {
+      "identifier": "openURLlib"
+    }
+  ]
+}
