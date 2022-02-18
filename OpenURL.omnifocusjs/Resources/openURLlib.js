@@ -35,7 +35,9 @@
   }
 
   openURLlib.openOmniFocusURL = async url => {
-    await document.newWindow()
+    const pref = openURLlib.getOmniFocusOpenPref()
+    if (pref === 'window') await document.newWindow()
+    else if (pref === 'tab') await document.newTabOnWindow(document.windows[0])
     URL.fromString(url).open()
   }
 
