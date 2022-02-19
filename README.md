@@ -12,7 +12,7 @@ Refer to ['issues'](https://github.com/ksalzke/open-url-from-note-omnifocus-plug
 
 ## Synced Preferences Plug-In
 
-**Important note: for this plug-in bundle to work correctly, my [Synced Preferences for OmniFocus plugin](https://github.com/ksalzke/synced-preferences-for-omnifocus) is also required and needs to be added to the plug-in folder separately.**
+**Important note: for this plug-in bundle to work correctly, my [Synced Preferences for OmniFocus plug-in](https://github.com/ksalzke/synced-preferences-for-omnifocus) is also required and needs to be added to the plug-in folder separately.**
 
 ## Installation
 
@@ -37,7 +37,7 @@ Depending on the option chosen in preferences, OmniFocus links may be opened in 
 
 ## Preferences
 
-This action allows the user to set the preferences for the plug-in. These sync between devices using the Synced Preferences plugin linked above.
+This action allows the user to set the preferences for the plug-in. These sync between devices using the Synced Preferences plug-in linked above.
 
 The following preference is available:
 
@@ -45,13 +45,13 @@ The following preference is available:
 
 # Functions
 
-This plugin contains a number of functions within the `openURLlib` library.
+This plug-in contains a number of functions within the `openURLlib` library.
 
 ## `loadSyncedPrefs () : SyncedPref`
 
-Returns the [SyncedPref](https://github.com/ksalzke/synced-preferences-for-omnifocus) object for this plugin.
+Returns the [SyncedPref](https://github.com/ksalzke/synced-preferences-for-omnifocus) object for this plug-in.
 
-If the user does not have the plugin installed correctly, they are alerted.
+If the user does not have the plug-in installed correctly, they are alerted.
 
 ## `getOmniFocusOpenPref () : string`
 
