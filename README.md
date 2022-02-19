@@ -53,7 +53,7 @@ Returns the [SyncedPref](https://github.com/ksalzke/synced-preferences-for-omnif
 
 If the user does not have the plugin installed correctly, they are alerted.
 
-## `getOmniFocusOpenPref () : string
+## `getOmniFocusOpenPref () : string`
 
 Returns the user's current preference for OmniFocus links - one of 'window', 'tab', or 'neither'.
 
