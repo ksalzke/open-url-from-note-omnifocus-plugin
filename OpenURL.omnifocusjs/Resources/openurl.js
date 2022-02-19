@@ -8,9 +8,9 @@
 
     const urls = [...task.note.matchAll(regex)].map(match => match[0])
 
-    // TODO: Alert if no URL found
+    if (urls.length === 0) new Alert('No URLs found', 'There were no URLs found in the note of the selected task.').show()
 
-    if (urls.length === 1) lib.openURL(urls[0])
+    else if (urls.length === 1) lib.openURL(urls[0])
 
     else if (urls.length > 1) {
       const form = new Form()
