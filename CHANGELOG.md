@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.3.0...v1.4.0) (2022-02-19)
+
+
+### Features
+
+* :lipstick: show alert if no URLs found in note of selected task ([35577a4](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/commit/35577a4b35ed04fd3bc8dcf40df748abd44f6e65))
+
+
+
 # [1.3.0](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.2.0...v1.3.0) (2022-02-18)
 
 
