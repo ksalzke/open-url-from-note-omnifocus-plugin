@@ -30,7 +30,7 @@
   }
 
   openURLlib.openURL = url => {
-    if (url.toLowerCase().startsWith('omnifocus://')) openURLlib.openOmniFocusURL(url)
+    if (url.toLowerCase().startsWith('omnifocus://') && !url.toLowerCase().startsWith('omnifocus://localhost/omnijs-run?')) openURLlib.openOmniFocusURL(url)
     else URL.fromString(url).open()
   }
 
