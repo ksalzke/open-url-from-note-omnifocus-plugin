@@ -1,3 +1,12 @@
+## [1.4.1](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.4.0...v1.4.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* :bug: don't treat omnijs-run urls as OmniFocus links ([6aea891](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/commit/6aea8919b90392cc437251f32f063d5cf2c2aade))
+
+
+
 # [1.4.0](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.3.0...v1.4.0) (2022-02-19)
 
 
