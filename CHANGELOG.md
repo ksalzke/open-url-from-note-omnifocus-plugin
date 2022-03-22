@@ -1,3 +1,12 @@
+## [1.4.2](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.4.1...v1.4.2) (2022-03-22)
+
+
+### Bug Fixes
+
+* :bug: fix bug where URL recognition stopped at any ':' character ([9534421](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/commit/95344216c9aa05f7dff33b03850449e89f050a96))
+
+
+
 ## [1.4.1](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.4.0...v1.4.1) (2022-02-22)
 
 
