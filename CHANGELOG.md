@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.4.2...v1.5.0) (2023-01-20)
+
+
+### Features
+
+* :sparkles: add ability to run 'open URL' when a project is selected ([1c6ae70](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/commit/1c6ae701c5cf33be3d855403cd8bc32808635e23)), closes [#3](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/issues/3)
+
+
+
 ## [1.4.2](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.4.1...v1.4.2) (2022-03-22)
 
 

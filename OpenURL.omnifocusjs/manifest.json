@@ -3,7 +3,7 @@
   "identifier": "com.KaitlinSalzke.OpenURL",
   "author": "Kaitlin Salzke",
   "description": "An OmniFocus Plug-In that opens the URL(s) contained in the note of a task.",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "actions": [
     {
       "identifier": "openURL",
