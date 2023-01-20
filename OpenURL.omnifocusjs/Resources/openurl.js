@@ -2,7 +2,7 @@
 (() => {
   const action = new PlugIn.Action(async function (selection, sender) {
     const lib = this.openURLlib
-    const task = selection.tasks[0]
+    const task = selection.tasks[0] || selection.projects[0].task
 
     const regex = /\b\S*\:\/{2,3}[a-zA-Z./?_=\-\&%0-9:~#\[\]!\$'\(\)\*\+]*(\b)?/gm // eslint-disable-line
 
@@ -21,7 +21,7 @@
   })
 
   action.validate = function (selection, sender) {
-    return selection.tasks.length === 1
+    return selection.tasks.length === 1 || selection.projects.length === 1
   }
 
   return action
