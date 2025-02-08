@@ -4,19 +4,29 @@
     const lib = this.openURLlib
     const task = selection.tasks[0] || selection.projects[0].task
 
-    const regex = /\b\S*\:(?!\s|\d)(\/{2,3})?[a-zA-Z.@/?_=\-\&%0-9~#\[\]!\$'\(\)\*\+]*(\b)?/gm // eslint-disable-line
+    const regex = /\b[a-zA-Z][a-zA-Z0-9+\-.]*:[^ \t\n\r:][a-zA-Z0-9.@\/?_=\-\&%~#\[\]!\$'\(\)\*\+]*(\b)?/gm // eslint-disable-line
 
-    const urls = [...task.note.matchAll(regex)].map(match => match[0])
+    // Match all URLs in the task note
+    const urls = [...task.note.matchAll(regex)].map(match => {
+      try {
+        return decodeURIComponent(match[0]) // Decode the URL
+      } catch (error) {
+        console.error(`Failed to decode URL: ${match[0]}`, error)
+        return match[0] // Use the original if decoding fails
+      }
+    })
 
-    if (urls.length === 0) new Alert('No URLs found', 'There were no URLs found in the note of the selected task.').show()
-
-    else if (urls.length === 1) lib.openURL(urls[0])
-
-    else if (urls.length > 1) {
+    if (urls.length === 0) {
+      new Alert('No URLs found', 'There were no URLs found in the note of the selected task.').show()
+    } else if (urls.length === 1) {
+      lib.openURL(urls[0])
+    } else if (urls.length > 1) {
       const form = new Form()
       form.addField(new Form.Field.MultipleOptions('urls', 'URLs', urls, urls, urls))
       await form.show('Select URLs to Open', 'Open')
-      for (const url of form.values.urls) lib.openURL(url)
+      for (const url of form.values.urls) {
+        lib.openURL(url)
+      }
     }
   })
 
