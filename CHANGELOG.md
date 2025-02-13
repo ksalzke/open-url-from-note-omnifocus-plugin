@@ -1,3 +1,12 @@
+## [1.5.1](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.5.0...v1.5.1) (2025-02-13)
+
+
+### Bug Fixes
+
+* force release ([ddf2433](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/commit/ddf2433551b176c8c0d1413aed02d3f345312de9))
+
+
+
 # [1.5.0](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/compare/v1.4.2...v1.5.0) (2023-01-20)
 
 
