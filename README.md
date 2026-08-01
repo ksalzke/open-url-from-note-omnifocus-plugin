@@ -10,16 +10,19 @@ Refer to ['issues'](https://github.com/ksalzke/open-url-from-note-omnifocus-plug
 
 # Installation & Set-Up
 
-## Synced Preferences Plug-In
+## Prerequisites 
 
-**Important note: for this plug-in bundle to work correctly, my [Synced Preferences for OmniFocus plug-in](https://github.com/ksalzke/synced-preferences-for-omnifocus) is also required and needs to be added to the plug-in folder separately.**
+This plug-in requires [Synced Preferences for OmniFocus](https://github.com/ksalzke/synced-preferences-for-omnifocus). Install it separately before using this plug-in.
 
 ## Installation
 
-1. Download the [latest release](https://github.com/ksalzke/open-url-from-note-omnifocus-plugin/releases/latest).
-2. Unzip the downloaded file.
-3. Move the `.omnifocusjs` file to your OmniFocus plug-in library folder (or open it to install).
-4. If desired, configure your preferences using the `Preferences` action.
+[![Install in OmniFocus](https://img.shields.io/badge/OmniFocus-Install-5E5CE6?style=flat-square)](https://ksalzke.github.io/omnifocus-plugin-installer/?repo=open-url-from-note-omnifocus-plugin)
+
+Select **Install** above, then follow the prompts.
+
+## Setup
+
+If desired, configure your preferences using the `Preferences` action.
 
 # Actions
 
